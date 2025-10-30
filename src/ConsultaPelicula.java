@@ -11,5 +11,8 @@ public class ConsultaPelicula {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri()
                 .build();
+
+        HttpResponse<String> response = client
+                .send(request, BodyHandlers.ofString());
     }
 }
