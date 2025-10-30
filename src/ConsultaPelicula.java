@@ -21,7 +21,7 @@ public class ConsultaPelicula {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
         } catch(IOException | InterruptedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("No encontre esa pelicula");
         }
 
 
