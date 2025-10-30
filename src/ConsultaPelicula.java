@@ -14,6 +14,6 @@ public class ConsultaPelicula {
                 .build();
 
         HttpResponse<String> response = client
-                .send(request, BodyHandlers.ofString());
+                .send(request, HttpRequest.BodyHandlers.ofString());
     }
 }
