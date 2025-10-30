@@ -9,6 +9,7 @@ public class Main {
             var numeroDePelicula = Integer.valueOf(lectura.nextLine());
             Pelicula pelicula = consulta.buscaPelicula(numeroDePelicula);
             System.out.println(pelicula);
+            GeneradorDeArchivo generador = new GeneradorDeArchivo();
         } catch (NumberFormatException e) {
             System.out.println("Numero no encontrado " + e.getMessage());
         } catch (RuntimeException e){
