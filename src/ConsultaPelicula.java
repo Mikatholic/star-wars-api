@@ -20,7 +20,7 @@ public class ConsultaPelicula {
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
-        } catch(IOException | InterruptedException e) {
+        } catch(Exception e) {
             throw new RuntimeException("No encontre esa pelicula");
         }
 
