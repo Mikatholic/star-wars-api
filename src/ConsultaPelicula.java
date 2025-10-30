@@ -15,5 +15,7 @@ public class ConsultaPelicula {
 
         HttpResponse<String> response = client
                 .send(request, HttpRequest.BodyHandlers.ofString());
+
+        return new Gson().fromJson(response.body(), Pelicula.class);
     }
 }
