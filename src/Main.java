@@ -10,6 +10,7 @@ public class Main {
             Pelicula pelicula = consulta.buscaPelicula(numeroDePelicula);
             System.out.println(pelicula);
             GeneradorDeArchivo generador = new GeneradorDeArchivo();
+            generador.guardarJson(pelicula);
         } catch (NumberFormatException e) {
             System.out.println("Numero no encontrado " + e.getMessage());
         } catch (RuntimeException e){
