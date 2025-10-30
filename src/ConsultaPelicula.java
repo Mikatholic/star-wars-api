@@ -1,4 +1,6 @@
 public class ConsultaPelicula {
 
-    Pelicula buscaPelicula()
+    Pelicula buscaPelicula(int numeroDePelicula){
+
+    }
 }
