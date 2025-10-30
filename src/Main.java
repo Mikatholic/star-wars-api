@@ -9,6 +9,8 @@ public class Main {
             var numeroDePelicula = Integer.valueOf(lectura.nextLine());
             Pelicula pelicula = consulta.buscaPelicula(numeroDePelicula);
             System.out.println(pelicula);
+        } catch (NumberFormatException e) {
+            System.out.println("Numero no encontrado " + e.getMessage());
         } catch (RuntimeException e){
             System.out.println(e.getMessage());
             System.out.println("Finalizando la aplicación");
