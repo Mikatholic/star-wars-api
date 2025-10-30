@@ -16,9 +16,8 @@ public class ConsultaPelicula {
                 .uri(direccion)
                 .build();
 
-        HttpResponse<String> response = null;
         try {
-            response = client
+            HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
             return new Gson().fromJson(response.body(), Pelicula.class);
         } catch(Exception e) {
