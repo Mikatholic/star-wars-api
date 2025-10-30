@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        Scanner lectura = new Scanner(System.in);
         ConsultaPelicula consulta = new ConsultaPelicula();
         try{
             Pelicula pelicula = consulta.buscaPelicula(9);
