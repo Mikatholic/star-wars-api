@@ -1,3 +1,5 @@
+import java.net.http.HttpClient;
+
 public class ConsultaPelicula {
 
     Pelicula buscaPelicula(int numeroDePelicula){
