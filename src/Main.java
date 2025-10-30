@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
             generador.guardarJson(pelicula);
         } catch (NumberFormatException e) {
             System.out.println("Numero no encontrado " + e.getMessage());
-        } catch (RuntimeException e){
+        } catch (RuntimeException | IOException e){
             System.out.println(e.getMessage());
             System.out.println("Finalizando la aplicación");
         }
