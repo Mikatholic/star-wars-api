@@ -6,7 +6,8 @@ public class Main {
         ConsultaPelicula consulta = new ConsultaPelicula();
         System.out.println("Escriba el número de la película que quiere consultar");
         try{
-            Pelicula pelicula = consulta.buscaPelicula(9);
+            var numeroDePelicula = lectura.nextLine();
+            Pelicula pelicula = consulta.buscaPelicula(numeroDePelicula);
             System.out.println(pelicula);
         } catch (RuntimeException e){
             System.out.println(e.getMessage());
