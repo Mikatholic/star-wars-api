@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaPelicula {
 
-    Pelicula buscaPelicula(int numeroDePelicula){
+    public Pelicula buscaPelicula(int numeroDePelicula){
         URI direccion = URI.create("https://swapi.dev/api/films/" + numeroDePelicula);
         HttpClient client = HttpClient.newHttpClient();
 
